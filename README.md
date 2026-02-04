@@ -1,1 +1,1 @@
-PS1.do contains all of my code for completing the first problem set. Please read the .do file commands and do not run it from the beginning. The comments contain vital information about how to properly run it. The end is where you will find the right data set, but I included some of my previous data and commands to show how I got to that point at the end. 
+
