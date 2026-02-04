@@ -100,10 +100,19 @@ export delimited using "cd_final.csv", replace
 //NOW is where you can run the .do file. This is where my shareable link was created so that you could open the dataset and see it in its final form, merged and completed. 
 
 // The reason I did it this way, was because I had initially done all of the work on the backhand side connected to my computer, so I went back and created my dataset as a google file so that I could then simply attach it to the end instead of going back and doing the work all over again. 
-import delimited ///
-"https://drive.google.com/uc?id=1RI7Y38i_zGtB_jLTgSlVqdKgTIYYZCeL/export=download"
 
-// Then, you can drop the merged variables just to clean up your dataset a bit more since it is a little messy at this point. 
+import delimited "https://drive.google.com/uc?export=download&id=1RI7Y38i_zGtB_jLTgSlVqdKgTIYYZCeL"
+
+//Rename some of the variables to fix the dataset. Similar to what I did above. 
+
+rename v1 attributes
+rename v2 TN
+rename v3 HC
+rename v4 _merge
+
+//Drop the _merge variable so that you are able to clean up the dataset. Also drop the first row since it was formatted incorrectly.
+
+drop in 1
 drop _merge
 
 // Now, I am going back and saving my dataset in two different ways after doing it via a google link to further show understanding. 
